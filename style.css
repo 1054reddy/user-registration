@@ -5,7 +5,7 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: url('https://img.freepik.com/free-vector/realistic-style-technology-particle-background_23-2148426704.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
