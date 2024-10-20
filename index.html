@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>User Registration</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="registration">
         <h2>User Registration</h2>
-        <form action="https://formspree.io/f/mwpkkevp" method="POST">
-            <label for="userid">UserID:</label>
-            <input type="number" id="userid" name="UserID" required> 
+        <form id="registrationForm">
+            <label for="userId">UserID:</label>
+            <input type="number" id="userId" name="userId" required> 
             <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required> <br>
+            <label for="userPassword">Password:</label>
+            <input type="password" id="userPassword" name="userPassword" required> <br>
             <button type="submit">Register</button>
         </form>
+        <p id="statusMessage" style="color: red;"></p> <!-- For displaying messages -->
     </div>
 </body>
+<script src="script.js"></script>
 </html>
