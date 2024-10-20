@@ -7,14 +7,16 @@ document.getElementById("registrationForm").addEventListener("submit", function(
 
     if (userId === "" || userPassword === "") {
         statusMessage.textContent = "All fields are required.";
+        statusMessage.style.color = "red";
     } else {
         // Simple validation: Check if the password is at least 6 characters
         if (userPassword.length < 6) {
             statusMessage.textContent = "Password must be at least 6 characters long.";
+            statusMessage.style.color = "red";
         } else {
             statusMessage.style.color = "green";
             statusMessage.textContent = "Registration successful!";
-            // You can add code here to send data to the server
+            // Here you can add code to send the data to the server, if needed.
         }
     }
 });
